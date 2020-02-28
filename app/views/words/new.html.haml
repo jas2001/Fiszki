@@ -1,0 +1,6 @@
+=simple_form_for @word do |f|
+  = f.input :polish
+  = f.input :english
+  = f.input :spanish
+  = f.association :category, selected: 'Inne', required:false
+  = f.button :submit
